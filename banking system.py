@@ -18,11 +18,6 @@ class BankAccount:
     def check_balance(self):
         print(f"Current balance: {self.balance}")
 def main():
-    user_accounts={"47589":{"pin":"1234","balance":1350},
-                   "12456":{"pin":"9658","balance":2478},
-                   "45632":{"pin":"6523","balance":4500},
-                   "85236":{"pin":"1874","balance":500},
-                   "74256":{"pin":"5284","balance":1000}}
     #login
     while True:
         print("\nMenu")
@@ -71,6 +66,11 @@ def account_menu(account):
         else:
             print("invalid choice.Please enter a valid choice")
 if __name__=="__main__":
+    user_accounts={"47589":{"pin":"1234","balance":1350},
+                   "12456":{"pin":"9658","balance":2478},
+                   "45632":{"pin":"6523","balance":4500},
+                   "85236":{"pin":"1874","balance":500},
+                   "74256":{"pin":"5284","balance":1000}}
     main()
 
 
