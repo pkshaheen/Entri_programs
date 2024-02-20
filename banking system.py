@@ -1,4 +1,4 @@
-class BankOperations:
+class BankAccount:
     def __init__(self,account_number,pin,balance=0):
         self.account_number=account_number
         self.pin=pin
