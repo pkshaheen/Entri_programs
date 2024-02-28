@@ -30,7 +30,7 @@ def main():
             if account_number in user_accounts:
                 pin=input("Enter pin:")
                 if pin==user_accounts[account_number]["pin"]:
-                    account=BankOperations(account_number, pin,user_accounts[account_number]["balance"])
+                    account=BankAccount(account_number, pin,user_accounts[account_number]["balance"])
                     account_menu(account)
                     break
                 else:
